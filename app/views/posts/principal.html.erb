@@ -1,0 +1,10 @@
+   <br>
+    <% @posts.each do |post| %>
+
+
+       <%= link_to post.title, post %> <br>
+       	<%= post.created_at %> <br>
+
+
+        <%= post.text %>
+    <% end %>
